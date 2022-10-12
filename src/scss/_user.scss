@@ -1,0 +1,72 @@
+.user {
+  margin-top: $header-height + 4;
+  margin-bottom: 10rem;
+  &__infoo {
+    padding-bottom: 3rem;
+    border-bottom: 5px solid white;
+    button {
+      transform: scale(0.8);
+      margin-top: -8px;
+      @include mobile {
+        font-size: 1rem !important;
+      }
+    }
+  }
+  &__info {
+    &__name {
+      input {
+        background-color: transparent;
+        outline: $main-color;
+        color: white;
+        padding: 0px 1rem;
+      }
+    }
+  }
+
+  &__repository {
+    &__container {
+      display: flex;
+      @include mobile {
+        display: block;
+      }
+      button {
+        width: 100%;
+        @include mobile {
+          width: 28%;
+        }
+        & ~ button {
+          margin-top: 1rem;
+          @include mobile {
+            margin-top: 0;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+    &__container__select {
+      padding: 0px 1rem;
+      width: 25%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    &__container__card {
+      border-left: 2px solid white;
+      padding-left: 2rem;
+      width: 75%;
+      @include mobile {
+        border-left: unset;
+        width: 100%;
+        padding-left: unset;
+        padding-top: 3rem;
+      }
+      .card {
+        padding-top: 28%;
+        width: 12.5rem;
+      }
+      h5 {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

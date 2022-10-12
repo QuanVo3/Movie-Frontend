@@ -1,0 +1,73 @@
+.login {
+  background-image: url("../assets/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 30px;
+    padding: 3rem 4rem;
+  }
+  &__form {
+    width: 19rem;
+  }
+  &__header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  &__input {
+    margin-bottom: 1.25rem;
+
+    input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 50px;
+      outline: none;
+      border-color: transparent;
+      background-color: #dedede;
+      font-size: 0.8rem;
+      &:focus {
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+  }
+  &__register {
+    margin-top: 2rem;
+    &__txt {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.541);
+      a {
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__error {
+    color: rgb(255, 5, 5);
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+}
